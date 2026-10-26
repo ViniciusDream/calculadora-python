@@ -1,9 +1,8 @@
 # Calculadora em Python
-# Executa adição, subtração, multiplicação e divisão no terminal.
+# ATIVIDADE FEITA POR MARCOS VINÍCIUS BONFIN DE OLIVEIRA - ADS- TURMA B
  
 LINHA = "=" * 40
  
-# Cada opção do menu aponta para o nome e o símbolo da operação.
 OPERACOES = {
     "1": ("Adição", "+"),
     "2": ("Subtração", "-"),
@@ -58,7 +57,7 @@ def calcular(opcao, primeiro_numero, segundo_numero):
 def formatar(valor):
     """Mostra números inteiros sem '.0' e limita as casas decimais."""
     if abs(valor) >= 1e15:
-        return f"{valor:.6g}"  # números enormes ficam em notação científica
+        return f"{valor:.6g}" 
     if valor.is_integer():
         return str(int(valor))
     return f"{valor:.4f}".rstrip("0").rstrip(".")
